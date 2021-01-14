@@ -1,11 +1,12 @@
 import React from "react";
-import Header from "../../commons/Header";
 import CardPowerCart from "./CardPowerCart";
+import style from "./Cart.module.css";
 
 function Cart() {
   return (
-    <div>
-      <Header />
+    <div className={style.Cart}>
+      <CardPowerCart />
+      <CardPowerCart />
       <CardPowerCart />
     </div>
   );

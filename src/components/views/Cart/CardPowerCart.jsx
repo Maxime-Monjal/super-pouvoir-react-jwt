@@ -7,7 +7,11 @@ function CardPowerCart() {
     <div className={style.CardPowerCart}>
       <div className={style.container}>
         <div className={style.containerImg}>
-          <img className={style.img} src="" alt="titre" />
+          <img
+            className={style.img}
+            src="https://i.f1g.fr/media/eidos/805x453_crop/2012/12/21/XVM72c997ca-3fd4-11e7-a469-62c36d07d43b.jpg"
+            alt="titre"
+          />
         </div>
         <div>
           <h3 className={style.title}>titre</h3>
