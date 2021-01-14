@@ -6,11 +6,12 @@ const Footer = () => {
   return (
     <footer className={style.footer}>
       <div className={style.divTeam}>
-        <span className={style.team}>WCS / Team Super 5</span>
+        <span className={style.team}>WCS / Team Super Five</span>
       </div>
       <div className={style.divCopyright}>
         <img className={style.copyrightLogo} src={copyright} alt="Copyright" />
-        <span className={style.copyrightText}>Copyright 2021</span>
+        <span className={style.copyrightText}>Copyright</span>
+        <span>2021</span>
       </div>
     </footer>
   );

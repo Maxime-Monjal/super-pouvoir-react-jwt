@@ -18,6 +18,7 @@
 .team {
   color: var(--white-text-color);
   margin: 0;
+  font-family: Aquawax Medium Trial;
 }
 
 .divCopyright {
@@ -33,4 +34,6 @@
 
 .copyrightText {
   margin: 0;
+  font-family: Aquawax Medium Trial;
+  margin-right: 0.3rem;
 }
