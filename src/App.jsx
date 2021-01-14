@@ -1,5 +1,6 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
+import { TinyButton as ScrollUpButton } from "react-scroll-up-button";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Product from "./components/views/Product";
 import Header from "./components/commons/Header/Header";
@@ -19,6 +20,16 @@ function App() {
         <Route path="/panier" component={Cart} />
       </Switch>
       <Footer />
+      <ScrollUpButton
+        style={{
+          backgroundColor: "none",
+          width: "40px",
+          height: "40px",
+          transform: "translateY(-1.75rem) translateX(1.5rem)",
+          borderRadius: "5px",
+          boxShadow: "#ffffff 3px 3px 5px",
+        }}
+      />
     </Router>
   );
 }
