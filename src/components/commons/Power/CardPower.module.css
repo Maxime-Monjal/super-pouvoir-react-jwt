@@ -1,13 +1,14 @@
 .CardPower {
   display: flex;
   flex-direction: column;
+  margin-bottom: 1rem;
 }
 
 .container {
   background-color: var(--gray-background-color);
   display: flex;
   flex-direction: column;
-  box-shadow: 5px 5px 5px black;
+  box-shadow: 5px 5px 5px var(--gray-background-color);
 }
 
 .title {
@@ -25,12 +26,14 @@
 }
 .img {
   align-self: flex-start;
-  height: 10rem;
-  width: 10rem;
+  height: 8rem;
+  width: 8rem;
+  margin-right: 0.5rem;
 }
 
 .button {
   align-self: flex-end;
-  background: black;
+  background: var(--red-background-color);
   color: var(--white-text-color);
+  border-radius: 10%;
 }
