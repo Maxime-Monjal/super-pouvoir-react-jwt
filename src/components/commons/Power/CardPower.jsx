@@ -1,9 +1,10 @@
 import React from "react";
 import PropTypes from "prop-types";
+import { Link } from "react-router-dom";
 import style from "./CardPower.module.css";
 
 function CardPower({ power }) {
-  const { title, prix, image, description } = power;
+  const { title, prix, image, description, id, slug } = power;
   return (
     <div className={style.CardPower}>
       <div className={style.container}>
@@ -13,9 +14,11 @@ function CardPower({ power }) {
           <img className={style.img} src={image} alt={title} />
           <p className={style.description}>{description}</p>
         </div>
-        <button className={style.button} type="submit">
-          Acheter
-        </button>
+        <Link to={`/characters/${power.id}`}>
+          <button className={style.button} type="submit">
+            Acheter
+          </button>
+        </Link>
       </div>
     </div>
   );
@@ -24,6 +27,8 @@ function CardPower({ power }) {
 CardPower.propTypes = {
   power: PropTypes.shape({
     title: PropTypes.string.isRequired,
+    slug: PropTypes.string.isRequired,
+    id: PropTypes.number.isRequired,
     description: PropTypes.string.isRequired,
     prix: PropTypes.number.isRequired,
     image: PropTypes.string.isRequired,

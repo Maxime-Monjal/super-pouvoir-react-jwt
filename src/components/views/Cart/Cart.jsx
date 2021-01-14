@@ -1,5 +1,4 @@
 import React from "react";
-import Header from "../../commons/Header";
 import CardPowerCart from "./CardPowerCart";
 
 function Cart() {

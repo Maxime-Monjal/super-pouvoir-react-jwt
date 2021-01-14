@@ -8,7 +8,6 @@ import "./App.css";
 import Home from "./components/views/Home/Home";
 import Cart from "./components/views/Cart/Cart";
 
-
 function App() {
   return (
     <Router>
