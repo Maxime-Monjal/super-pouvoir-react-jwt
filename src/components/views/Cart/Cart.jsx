@@ -1,5 +1,5 @@
 import React from "react";
-import CardPowerCart from "./CardPowerCart";
+import CardPowerCart from "../../commons/Power/CardPowerCart";
 import style from "./Cart.module.css";
 
 function Cart() {
