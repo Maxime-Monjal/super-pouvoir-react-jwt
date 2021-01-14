@@ -3,7 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Header from "./components/commons/Header";
 import "./App.css";
-import Power from "./components/commons/Power/Power";
+import Home from "./components/views/Home/Home";
 
 function App() {
   return (
@@ -13,7 +13,7 @@ function App() {
         <Route exact path="/" />
         <Route path="/panier" />
       </Switch>
-      <Power />
+      <Home />
     </Router>
   );
 }
