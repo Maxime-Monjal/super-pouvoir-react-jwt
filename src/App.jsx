@@ -5,6 +5,7 @@ import "./App.css";
 import Users from "./components/views/Users";
 import Login from "./components/views/Login";
 import Logout from "./components/views/Logout";
+import Power from "./components/commons/Power/Power";
 
 function App() {
   return (
@@ -44,6 +45,7 @@ function App() {
               <Logout />
             </Route>
           </Switch>
+          <Power />
         </div>
       </div>
     </Router>
