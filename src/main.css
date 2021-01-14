@@ -1,0 +1,13 @@
+:root {
+  /* COLORS */
+  --red-background-color: #ff0000;
+  --gray-background-color: #c4c4c4;
+  --white-text-color: #ffffff;
+  --black-text-color: #000000;
+}
+/* RESET CSS */
+
+* {
+  margin: 0;
+  padding: 0;
+}
