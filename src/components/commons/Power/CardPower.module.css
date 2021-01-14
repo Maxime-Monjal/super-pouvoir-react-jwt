@@ -1,7 +1,8 @@
 .CardPower {
   display: flex;
   flex-direction: column;
-  margin-bottom: 1rem;
+  width: 30%;
+  margin: 1rem;
 }
 
 .container {
@@ -36,4 +37,5 @@
   background: var(--red-background-color);
   color: var(--white-text-color);
   border-radius: 10%;
+  width: 6rem;
 }

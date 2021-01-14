@@ -1,6 +1,7 @@
-.Projet {
+.Power {
+  margin-top: 5rem;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 }
