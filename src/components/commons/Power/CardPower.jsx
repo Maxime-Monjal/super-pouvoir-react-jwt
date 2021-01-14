@@ -14,7 +14,7 @@ function CardPower({ power }) {
           <p className={style.description}>{description}</p>
         </div>
         <button className={style.button} type="submit">
-          Acheter
+          Ajouter
         </button>
       </div>
     </div>
