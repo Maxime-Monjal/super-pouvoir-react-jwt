@@ -9,6 +9,7 @@ import "./fonts/AVENGEANCE HEROIC AVENGER BI.ttf";
 import "./fonts/AVENGEANCE HEROIC AVENGER AT.ttf";
 
 import App from "./App";
+import "./main.css";
 
 ReactDOM.render(
   <React.StrictMode>
