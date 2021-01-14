@@ -3,6 +3,7 @@
   width: 100%;
   height: 3.5rem;
   display: flex;
+  position: fixed;
 }
 
 .home {
@@ -40,6 +41,6 @@
 }
 
 .link {
-    outline: none;
-    text-decoration: none !important;
+  outline: none;
+  text-decoration: none !important;
 }

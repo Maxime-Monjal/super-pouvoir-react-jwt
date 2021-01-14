@@ -13,20 +13,21 @@ function CardPower({ power }) {
           <img className={style.img} src={image} alt={title} />
           <p className={style.description}>{description}</p>
         </div>
+        <button className={style.button} type="submit">
+          Acheter
+        </button>
       </div>
-      <button className={style.button} type="submit">
-        Acheter
-      </button>
     </div>
   );
 }
 
 CardPower.propTypes = {
-  power: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
-  title: PropTypes.string.isRequired,
-  description: PropTypes.string.isRequired,
-  prix: PropTypes.number.isRequired,
-  image: PropTypes.string.isRequired,
+  power: PropTypes.shape({
+    title: PropTypes.string.isRequired,
+    description: PropTypes.string.isRequired,
+    prix: PropTypes.number.isRequired,
+    image: PropTypes.string.isRequired,
+  }).isRequired,
 };
 
 export default CardPower;
