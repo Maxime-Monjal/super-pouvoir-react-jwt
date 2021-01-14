@@ -1,0 +1,76 @@
+@font-face {
+    font-family: 'Aquawax Light';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Aquawax Light'), url('./fonts/Aquawax Light Trial.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Aquawax Medium';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Aquawax Medium'), url('./fonts/Aquawax Medium Trial.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Aquawax Black';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Aquawax Black'), url('./fonts/Aquawax Black Trial.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Avengeance Heroic Avenger Normal';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Avengeance Heroic Avenger Normal'), url('./fonts/AVENGEANCE HEROIC AVENGER.ttf') format('ttf');
+}
+
+@font-face {
+    font-family: 'Avengeance Heroic Avenger Normal';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Avengeance Heroic Avenger Normal'), url('./fonts/AVENGEANCE HEROIC AVENGER.ttf') format('ttf');
+}
+
+@font-face {
+    font-family: 'Avengeance Heroic Avenger Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Avengeance Heroic Avenger Italic'), url('./fonts/AVENGEANCE HEROIC AVENGER AT.ttf') format('ttf');
+}
+
+@font-face {
+    font-family: 'Avengeance Heroic Avenger Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Avengeance Heroic Avenger Italic'), url('./fonts/AVENGEANCE HEROIC AVENGER AT.ttf') format('ttf');
+}
+
+@font-face {
+    font-family: 'Avengeance Heroic Avenger Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Avengeance Heroic Avenger Bold'), url('./fonts/AVENGEANCE HEROIC AVENGER BD.ttf') format('ttf');
+}
+
+@font-face {
+    font-family: 'Avengeance Heroic Avenger Bold Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Avengeance Heroic Avenger Bold Italic'), url('./fonts/AVENGEANCE HEROIC AVENGER BI.ttf') format('ttf');
+}
+
+@font-face {
+    font-family: 'Avengeance Heroic Avenger Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Avengeance Heroic Avenger Bold'), url('./fonts/AVENGEANCE HEROIC AVENGER BD.ttf') format('ttf');
+}
+
+@font-face {
+    font-family: 'Avengeance Heroic Avenger Bold Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Avengeance Heroic Avenger Bold Italic'), url('./fonts/AVENGEANCE HEROIC AVENGER BI.ttf') format('ttf');
+}
