@@ -1,0 +1,41 @@
+.CardPowerCart {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+  
+.container {
+    background-color: var(--gray-background-color);
+    display: flex;
+    flex-direction: column;
+    box-shadow: 5px 5px 5px var(--gray-background-color);
+}
+  
+.title {
+    text-align: center;
+}
+  
+.price {
+    align-self: flex-end;
+}
+  
+.containerImg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img {
+    align-self: flex-start;
+    height: 8rem;
+    width: 8rem;
+    margin-right: 0.5rem;
+}
+  
+.button {
+    align-self: flex-end;
+    background: var(--red-background-color);
+    color: var(--white-text-color);
+    border-radius: 10%;
+}
+  
