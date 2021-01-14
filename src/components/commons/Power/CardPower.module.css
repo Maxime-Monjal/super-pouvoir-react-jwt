@@ -1,7 +1,17 @@
 .CardPower {
   display: flex;
   flex-direction: column;
-  margin-bottom: 1rem;
+  width: 30%;
+  margin: 1rem;
+}
+
+@media (max-width: 768px) {
+  .CardPower {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 1rem;
+  }
 }
 
 .container {
@@ -13,10 +23,12 @@
 
 .title {
   text-align: center;
+  margin: 1rem;
 }
 
 .price {
   align-self: flex-end;
+  margin: 1rem;
 }
 
 .containerImg {
@@ -36,4 +48,6 @@
   background: var(--red-background-color);
   color: var(--white-text-color);
   border-radius: 10%;
+  width: 6rem;
+  margin: 1rem;
 }

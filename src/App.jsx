@@ -4,9 +4,10 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Product from "./components/views/Product";
 import Header from "./components/commons/Header/Header";
 import Footer from "./components/commons/Footer/Footer";
-import "./App.css";
 import Home from "./components/views/Home/Home";
 import Cart from "./components/views/Cart/Cart";
+
+import "./App.css";
 
 function App() {
   return (

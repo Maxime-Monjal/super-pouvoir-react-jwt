@@ -9,8 +9,8 @@ function Home() {
         <div className={style.containerhome}>
           <h1 className={style.title}>Magic Pills</h1>
           <p className={style.presentation}>
-            Bienvenue sur Magic Pills un site super ou vous pouvez achetez des
-            super-pouvoir pour devenir un super héros et c&#39;est super !
+            Bienvenue sur Magic Pills, un site super où vous pouvez acheter des
+            super-pouvoirs pour devenir un super héros et c&#39;est super !!!
           </p>
         </div>
       </div>
