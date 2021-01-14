@@ -37,10 +37,10 @@
   justify-content: center;
 }
 .img {
-  align-self: flex-start;
-  height: 2rem;
-  width: 2rem;
-  margin-right: 0.5rem;
+  align-self: center;
+  width: 10rem;
+  height: 8rem;
+  margin: 0.5rem;
 }
 
 .button {
