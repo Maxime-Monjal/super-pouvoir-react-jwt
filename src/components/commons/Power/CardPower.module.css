@@ -5,6 +5,15 @@
   margin: 1rem;
 }
 
+@media (max-width: 768px) {
+  .CardPower {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 1rem;
+  }
+}
+
 .container {
   background-color: var(--gray-background-color);
   display: flex;
