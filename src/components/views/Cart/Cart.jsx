@@ -5,7 +5,6 @@ import CardPowerCart from "./CardPowerCart";
 function Cart() {
   return (
     <div>
-      <Header />
       <CardPowerCart />
     </div>
   );
