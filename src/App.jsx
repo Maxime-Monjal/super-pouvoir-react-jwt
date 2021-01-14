@@ -27,7 +27,7 @@ function App() {
           height: "40px",
           transform: "translateY(-1.75rem) translateX(1.5rem)",
           borderRadius: "5px",
-          boxShadow: "#ffffff 3px 3px 5px",
+          boxShadow: "#FF0000 3px 3px 5px",
         }}
       />
     </Router>
