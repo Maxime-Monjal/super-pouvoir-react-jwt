@@ -14,10 +14,12 @@
 
 .title {
   text-align: center;
+  margin: 1rem;
 }
 
 .price {
   align-self: flex-end;
+  margin: 1rem;
 }
 
 .containerImg {
@@ -38,4 +40,5 @@
   color: var(--white-text-color);
   border-radius: 10%;
   width: 6rem;
+  margin: 1rem;
 }
