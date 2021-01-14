@@ -5,6 +5,7 @@ import "./App.css";
 import Users from "./components/views/Users";
 import Login from "./components/views/Login";
 import Logout from "./components/views/Logout";
+import Product from "./components/views/Product";
 
 function App() {
   return (
@@ -30,6 +31,11 @@ function App() {
                 Disconnect
               </Link>
             </li>
+            <li className="nav-item">
+              <Link to="/product" className="nav-link">
+                Product
+              </Link>
+            </li>
           </div>
         </nav>
         <div className="container mt-3">
@@ -42,6 +48,9 @@ function App() {
             </Route>
             <Route exact path="/logout">
               <Logout />
+            </Route>
+            <Route exact path="/product">
+              <Product />
             </Route>
           </Switch>
         </div>
