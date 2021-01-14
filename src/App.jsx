@@ -10,10 +10,9 @@ function App() {
     <Router>
       <Header />
       <Switch>
-        <Route exact path="/" />
+        <Route exact path="/" component={Home} />
         <Route path="/panier" />
       </Switch>
-      <Home />
     </Router>
   );
 }

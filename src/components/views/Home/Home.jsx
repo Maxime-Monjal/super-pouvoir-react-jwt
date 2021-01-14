@@ -14,6 +14,32 @@ function Home() {
           </p>
         </div>
       </div>
+      <form className={style.form}>
+        <label className={style.label} htmlFor="classiques">
+          <input type="checkbox" id="classiques" name="classiques" />
+          Les classiques
+        </label>
+        <label className={style.label} htmlFor="inutiles">
+          <input type="checkbox" id="inutiles" name="inutiles" />
+          Les inutiles
+        </label>
+        <label className={style.label} htmlFor="environnementaux">
+          <input
+            type="checkbox"
+            id="environnementaux"
+            name="environnementaux"
+          />
+          Les environnementaux
+        </label>
+        <label className={style.label} htmlFor="flippants">
+          <input type="checkbox" id="flippants" name="flippants" />
+          Les flippants
+        </label>
+        <label className={style.label} htmlFor="corporels">
+          <input type="checkbox" id="corporels" name="corporels" />
+          Les corporels
+        </label>
+      </form>
       <Power />
     </div>
   );
