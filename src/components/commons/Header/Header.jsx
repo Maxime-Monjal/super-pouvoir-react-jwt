@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import style from "./Header.module.css";
-import home from "../../images/logo-accueil.svg";
-import cart from "../../images/logo-panier.svg";
+import home from "../../../images/logo-accueil.svg";
+import cart from "../../../images/logo-panier.svg";
 
 const Header = () => {
   return (
@@ -14,7 +14,7 @@ const Header = () => {
       </div>
       <div className={style.divTitle}>
         <Link className={style.link} to="/">
-          <h1 className={style.title}>Magic Pills</h1>
+          <span className={style.title}>Magic Pills</span>
         </Link>
       </div>
       <div className={style.cart}>
