@@ -8,17 +8,17 @@ const Header = () => {
   return (
     <header className={style.header}>
       <div className={style.home}>
-        <Link to="/">
+        <Link className={style.link} to="/">
           <img className={style.logoHome} src={home} alt="Accueil" />
         </Link>
       </div>
       <div className={style.divTitle}>
-        <Link to="/">
+        <Link className={style.link} to="/">
           <h1 className={style.title}>Magic Pills</h1>
         </Link>
       </div>
       <div className={style.cart}>
-        <Link to="/panier">
+        <Link className={style.link} to="/panier">
           <img className={style.logoCart} src={cart} alt="Panier" />
         </Link>
       </div>

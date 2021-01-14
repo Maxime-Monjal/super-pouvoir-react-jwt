@@ -1,0 +1,36 @@
+.CardPower {
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  background-color: var(--gray-background-color);
+  display: flex;
+  flex-direction: column;
+  box-shadow: 5px 5px 5px black;
+}
+
+.title {
+  text-align: center;
+}
+
+.price {
+  align-self: flex-end;
+}
+
+.containerImg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.img {
+  align-self: flex-start;
+  height: 10rem;
+  width: 10rem;
+}
+
+.button {
+  align-self: flex-end;
+  background: black;
+  color: var(--white-text-color);
+}
