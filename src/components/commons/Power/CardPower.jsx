@@ -5,7 +5,7 @@ import style from "./CardPower.module.css";
 import "../../../images/super-pouvoir-inutile.jpg";
 
 function CardPower({ power }) {
-  const { title, prix, picture, description, slug } = power;
+  const { title, prix, picture, contenu_produit, slug } = power;
   console.log(title);
   return (
     <div className={style.CardPower}>
@@ -18,7 +18,7 @@ function CardPower({ power }) {
             src={`../../../images/${picture}`}
             alt={title}
           />
-          <p className={style.description}>{description}</p>
+          <p className={style.description}>{contenu_produit}</p>
         </div>
         <Link to={`/product/${slug}`}>
           <button className={style.button} type="submit">
@@ -35,7 +35,7 @@ CardPower.propTypes = {
     title: PropTypes.string.isRequired,
     slug: PropTypes.string.isRequired,
     idsuper_pouvoir: PropTypes.number.isRequired,
-    description: PropTypes.string.isRequired,
+    contenu_produit: PropTypes.string.isRequired,
     prix: PropTypes.number.isRequired,
     picture: PropTypes.string.isRequired,
   }).isRequired,

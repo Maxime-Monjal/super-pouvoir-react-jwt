@@ -24,10 +24,12 @@
 .presentation {
   text-align: center;
 }
-.form {
-  text-align: center;
+.categorie {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.label {
+.button {
   margin-right: 1rem;
 }
