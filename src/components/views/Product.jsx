@@ -19,7 +19,7 @@ const Product = (props) => {
   }, []);
 
   return (
-    <div>
+    <div className={styles.product}>
       <h1>Découvrez le pouvoir : {powers.title}</h1>
       <div className={styles.column} />
       <div className={styles.align}>
