@@ -25,8 +25,6 @@ const Product = (props) => {
   }, [slug]);
   return (
     <div>
-      {console.log(powers)}
-
       <h1>Découvrez le pouvoir : {powers.title}</h1>
       <div className={styles.column} />
       <div className={styles.align}>
