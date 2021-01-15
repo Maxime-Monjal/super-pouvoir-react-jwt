@@ -20,7 +20,7 @@ function CardPower({ power }) {
           />
           <p className={style.description}>{contenu_produit}</p>
         </div>
-        <Link to={`/product/${slug}`}>
+        <Link className={style.link} to={`/product/${slug}`}>
           <button className={style.button} type="submit">
             Acheter
           </button>
