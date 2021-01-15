@@ -12,11 +12,7 @@ function CardPower({ power }) {
         <h3 className={style.title}>{title}</h3>
         <span className={style.price}>{prix} euros</span>
         <div className={style.containerImg}>
-          <img
-            className={style.img}
-            src={`../../../images/${picture}`}
-            alt={title}
-          />
+          <img className={style.img} src={picture} alt={title} />
           <p className={style.description}>{contenu_produit}</p>
         </div>
         <Link className={style.link} to={`/product/${slug}`}>

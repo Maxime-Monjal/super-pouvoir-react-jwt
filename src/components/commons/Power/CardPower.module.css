@@ -1,57 +1,56 @@
 .CardPower {
-    display: flex;
-    flex-direction: column;
-    width: 30%;
-    margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  margin: 1rem;
 }
 
 @media (max-width: 768px) {
-    .CardPower {
-        display: flex;
-        flex-direction: column;
-        width: 90%;
-        margin: 1rem;
-    }
+  .CardPower {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 1rem;
+  }
 }
 
 .container {
-    background-color: var(--gray-background-color);
-    display: flex;
-    flex-direction: column;
-    box-shadow: 5px 5px 5px var(--gray-background-color);
+  background-color: var(--gray-background-color);
+  display: flex;
+  flex-direction: column;
+  box-shadow: 5px 5px 5px var(--gray-background-color);
 }
 
 .title {
-    text-align: center;
-    margin: 1rem;
+  text-align: center;
+  margin: 1rem;
 }
 
 .price {
-    align-self: flex-end;
-    margin: 1rem;
+  align-self: flex-end;
+  margin: 1rem;
 }
 
 .containerImg {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .img {
-    align-self: flex-start;
-    height: 2rem;
-    width: 2rem;
-    margin-right: 0.5rem;
+  align-self: flex-start;
+  height: 10rem;
+  width: 12rem;
+  margin-right: 0.5rem;
 }
-
 .button {
-    background: var(--red-background-color);
-    color: var(--white-text-color);
-    border-radius: 10%;
-    width: 6rem;
-    margin: 1rem;
+  background: var(--red-background-color);
+  color: var(--white-text-color);
+  border-radius: 10%;
+  width: 6rem;
+  margin: 1rem;
 }
 
 .link {
-    align-self: flex-end;
+  align-self: flex-end;
 }
