@@ -1,6 +1,7 @@
 /* eslint-disable react/destructuring-assignment */
 
 import React, { useEffect, useState } from "react";
+import { Helmet } from "react-helmet";
 import axios from "axios";
 import PropTypes from "prop-types";
 import styles from "./Product.module.css";
@@ -22,10 +23,19 @@ const Product = (props) => {
         });
     }
   }, [slug]);
-
+  const getUrl = window.location;
+  const baseUrl = `${getUrl.protocol} + "//" + ${getUrl.host} + "/"`;
   const { title, prix, picture, contenu_produit, time, stock } = powers;
   return (
     <div className={styles.product}>
+      <Helmet>
+        <title>Produit</title>
+        <meta
+          name="description"
+          content="This is the product you are interested in"
+        />
+        <link rel="canonical" href={baseUrl} />
+      </Helmet>
       <h1>Decouvrez le pouvoir : {title}</h1>
       <div className={styles.column} />
       <div className={styles.align}>
