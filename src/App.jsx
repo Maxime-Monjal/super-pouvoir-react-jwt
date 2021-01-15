@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Product from "./components/views/Product";
@@ -12,6 +13,13 @@ import "./App.css";
 function App() {
   return (
     <Router>
+      <Helmet>
+        <title>Magic Pills</title>
+        <meta
+          name="description"
+          content="This is a site to become a super hero for a brief moment"
+        />
+      </Helmet>
       <Header />
       <Switch>
         <Route exact path="/" component={Home} />
