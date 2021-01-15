@@ -7,8 +7,6 @@ import Footer from "./components/commons/Footer/Footer";
 import Home from "./components/views/Home/Home";
 import Cart from "./components/views/Cart/Cart";
 
-import "./App.css";
-
 function App() {
   return (
     <Router>
