@@ -6,6 +6,7 @@ import Header from "./components/commons/Header/Header";
 import Footer from "./components/commons/Footer/Footer";
 import Home from "./components/views/Home/Home";
 import Cart from "./components/views/Cart/Cart";
+import Page404 from "./components/views/Page404/Page404";
 
 import "./App.css";
 
@@ -18,6 +19,7 @@ function App() {
         <Route path="/produits/:categorie" component={Home} />
         <Route path="/produit" component={Product} />
         <Route path="/panier" component={Cart} />
+        <Route path="/404" component={Page404} />
       </Switch>
       <Footer />
     </Router>
