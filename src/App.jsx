@@ -8,16 +8,15 @@ import Home from "./components/views/Home/Home";
 import Cart from "./components/views/Cart/Cart";
 import Page404 from "./components/views/Page404/Page404";
 
-import "./App.css";
-
 function App() {
   return (
     <Router>
       <Header />
       <Switch>
         <Route exact path="/" component={Home} />
-        <Route path="/produits/:categorie" component={Home} />
-        <Route path="/produit" component={Product} />
+        <Route exact path="/produits" component={Home} />
+        <Route exact path="/produits/:categorie" component={Home} />
+        <Route path="/product/:power" component={Product} />
         <Route path="/panier" component={Cart} />
         <Route path="/404" component={Page404} />
       </Switch>
