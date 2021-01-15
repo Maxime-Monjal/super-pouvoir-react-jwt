@@ -28,8 +28,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
+  width: 99%;
 }
 
 .button {
-  margin-right: 1rem;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  box-shadow: 2px 2px 1px var(--gray-background-color);
+  font-family: Aquawax Medium Trial;
 }

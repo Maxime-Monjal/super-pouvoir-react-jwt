@@ -38,11 +38,11 @@
 }
 
 .img {
-    align-self: flex-start;
-    height: 2rem;
-    width: 2rem;
-    margin-right: 0.5rem;
-}
+  align-self: flex-start;
+  height: 10rem;
+  width: 12rem;
+  margin-right: 0.5rem;
+
 
 .button {
     background: var(--red-background-color);
