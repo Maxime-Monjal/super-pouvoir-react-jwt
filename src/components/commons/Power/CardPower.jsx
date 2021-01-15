@@ -1,9 +1,11 @@
 import React from "react";
 import PropTypes from "prop-types";
+import { Link } from "react-router-dom";
 import style from "./CardPower.module.css";
+import "../../../images/super-pouvoir-inutile.jpg";
 
 function CardPower({ power }) {
-  const { title, prix, picture, contenu_produit } = power;
+  const { title, prix, picture, contenu_produit, slug } = power;
   return (
     <div className={style.CardPower}>
       <div className={style.container}>
@@ -17,9 +19,11 @@ function CardPower({ power }) {
           />
           <p className={style.description}>{contenu_produit}</p>
         </div>
-        <button className={style.button} type="submit">
-          Ajouter
-        </button>
+        <Link className={style.link} to={`/product/${slug}`}>
+          <button className={style.button} type="submit">
+            Acheter
+          </button>
+        </Link>
       </div>
     </div>
   );
@@ -28,6 +32,8 @@ function CardPower({ power }) {
 CardPower.propTypes = {
   power: PropTypes.shape({
     title: PropTypes.string.isRequired,
+    slug: PropTypes.string.isRequired,
+    idsuper_pouvoir: PropTypes.number.isRequired,
     contenu_produit: PropTypes.string.isRequired,
     prix: PropTypes.number.isRequired,
     picture: PropTypes.string.isRequired,
