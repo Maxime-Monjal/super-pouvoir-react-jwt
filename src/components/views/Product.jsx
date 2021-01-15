@@ -24,6 +24,8 @@ const Product = (props) => {
         });
     }
   }, [slug]);
+  const getUrl = window.location;
+  const baseUrl = `${getUrl.protocol} + "//" + ${getUrl.host} + "/"`;
   return (
     <div>
       <Helmet>
@@ -32,7 +34,7 @@ const Product = (props) => {
           name="description"
           content="This is the product you are interested in"
         />
-        <link rel="canonical" href="http://localhost:3000" />
+        <link rel="canonical" href={baseUrl} />
       </Helmet>
       <h1>Découvrez le pouvoir : {powers.title}</h1>
       <div className={styles.column} />
