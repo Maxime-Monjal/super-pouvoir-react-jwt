@@ -6,7 +6,6 @@ import "../../../images/super-pouvoir-inutile.jpg";
 
 function CardPower({ power }) {
   const { title, prix, picture, contenu_produit, slug } = power;
-  console.log(title);
   return (
     <div className={style.CardPower}>
       <div className={style.container}>

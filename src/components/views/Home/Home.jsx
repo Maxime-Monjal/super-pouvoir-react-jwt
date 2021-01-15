@@ -20,6 +20,13 @@ function Home() {
         <input
           className={style.button}
           type="button"
+          id="toutes"
+          value="Toutes catégories"
+          onClick={() => setUrl("")}
+        />
+        <input
+          className={style.button}
+          type="button"
           id="classique"
           value=" Les classiques"
           onClick={(e) => setUrl(e.target.id)}
