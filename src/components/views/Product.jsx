@@ -1,9 +1,8 @@
 /* eslint-disable react/destructuring-assignment */
-/* eslint-disable prefer-destructuring */
+
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import PropTypes from "prop-types";
-import hero from "../../images/super-pouvoir-classique.jpg";
 import styles from "./Product.module.css";
 
 const Product = (props) => {
@@ -23,18 +22,20 @@ const Product = (props) => {
         });
     }
   }, [slug]);
+
+  const { title, prix, picture, contenu_produit, time, stock } = powers;
   return (
-    <div>
-      <h1>Découvrez le pouvoir : {powers.title}</h1>
+    <div className={styles.product}>
+      <h1>Decouvrez le pouvoir : {title}</h1>
       <div className={styles.column} />
       <div className={styles.align}>
-        <img className={styles.image} src={hero} alt="product.title" />
+        <img className={styles.image} src={picture} alt={title} />
       </div>
       <div className={styles.list}>
         <ul>
-          <li>{powers.prix}</li>
-          <li>En stock : {powers.stock}</li>
-          <li>Durée : {powers.time}</li>
+          <li>Prix: {prix}$</li>
+          <li>En stock : {stock} pilules restantes</li>
+          <li>Durée : {time} minutes / pilule</li>
         </ul>
       </div>
       <div className={styles.align}>
@@ -43,7 +44,7 @@ const Product = (props) => {
         </button>
       </div>
       <h2>Description du pouvoir</h2>
-      <p className={styles.content}>{powers.contenu_produit}</p>
+      <p className={styles.content}>{contenu_produit}</p>
     </div>
   );
 };
@@ -54,4 +55,5 @@ Product.propTypes = {
     }),
   }).isRequired,
 };
+
 export default Product;
