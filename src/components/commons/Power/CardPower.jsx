@@ -1,32 +1,39 @@
 import React from "react";
 import PropTypes from "prop-types";
+import { Link } from "react-router-dom";
 import style from "./CardPower.module.css";
+import "../../../images/super-pouvoir-inutile.jpg";
 
 function CardPower({ power }) {
-  const { title, prix, image, description } = power;
+  const { title, prix, picture, contenu_produit, slug } = power;
   return (
     <div className={style.CardPower}>
       <div className={style.container}>
         <h3 className={style.title}>{title}</h3>
-        <span className={style.price}>{prix}</span>
+        <span className={style.price}>{prix} euros</span>
         <div className={style.containerImg}>
-          <img className={style.img} src={image} alt={title} />
-          <p className={style.description}>{description}</p>
+          <img className={style.img} src={picture} alt={title} />
+          <p className={style.description}>{contenu_produit}</p>
         </div>
+        <Link className={style.link} to={`/product/${slug}`}>
+          <button className={style.button} type="submit">
+            Acheter
+          </button>
+        </Link>
       </div>
-      <button className={style.button} type="submit">
-        Acheter
-      </button>
     </div>
   );
 }
 
 CardPower.propTypes = {
-  power: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
-  title: PropTypes.string.isRequired,
-  description: PropTypes.string.isRequired,
-  prix: PropTypes.number.isRequired,
-  image: PropTypes.string.isRequired,
+  power: PropTypes.shape({
+    title: PropTypes.string.isRequired,
+    slug: PropTypes.string.isRequired,
+    idsuper_pouvoir: PropTypes.number.isRequired,
+    contenu_produit: PropTypes.string.isRequired,
+    prix: PropTypes.number.isRequired,
+    picture: PropTypes.string.isRequired,
+  }).isRequired,
 };
 
 export default CardPower;

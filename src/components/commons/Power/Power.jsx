@@ -1,33 +1,39 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import PropTypes from "prop-types";
+import axios from "axios";
 import style from "./Power.module.css";
-import heros from "../../../images/super-héros.jpg";
 import CardPower from "./CardPower";
 
-function Power() {
-  const superPower = [
-    {
-      title: "Cailloux-man",
-      prix: 20,
-      image: heros,
-      description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit nemo ullam enim rerum Sed quo Eligendi labore reiciendisvoluptatum explicabo aliquam voluptas iure numquam nemo repellat  rem quam excepturi nam? Assumenda reiciendis odio tempore!",
-    },
-    {
-      title: "autre pouvoir",
-      prix: 60,
-      image: heros,
-      description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit nemo ullam enim rerum Sed quo Eligendi labore reiciendisvoluptatum explicabo aliquam voluptas iure numquam nemo repellat  rem quam excepturi nam? Assumenda reiciendis odio tempore!",
-    },
-  ];
+const Power = ({ url }) => {
+  const [powers, setPowers] = useState([]);
 
+  useEffect(() => {
+    const { REACT_APP_SERVER_ADDRESS } = process.env;
+    axios
+      .get(`${REACT_APP_SERVER_ADDRESS}/${url}`)
+      .then((res) => res.data)
+      .then((data) => {
+        setPowers(data);
+      });
+  }, [url]);
   return (
     <div className={style.Power}>
-      {superPower.map((power) => (
+      {powers.map((power) => (
         <CardPower power={power} key={power.title} />
       ))}
     </div>
   );
-}
+};
 
 export default Power;
+
+Power.propTypes = {
+  url: PropTypes.string.isRequired,
+};
+
+/*     axios
+      .get(`${REACT_APP_SERVER_ADDRESS}/${idUrl}`, {})
+      .then((res) => res.data)
+      .then((data) => {
+        console.log(data);
+      });  */
