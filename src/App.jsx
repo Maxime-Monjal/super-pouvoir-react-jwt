@@ -8,8 +8,6 @@ import Footer from "./components/commons/Footer/Footer";
 import Home from "./components/views/Home/Home";
 import Cart from "./components/views/Cart/Cart";
 
-import "./App.css";
-
 function App() {
   return (
     <Router>
@@ -23,8 +21,9 @@ function App() {
       <Header />
       <Switch>
         <Route exact path="/" component={Home} />
-        <Route exact path="/{idUrl}" component={Home} />
-        <Route path="/produit" component={Product} />
+        <Route exact path="/produits" component={Home} />
+        <Route exact path="/produits/:categorie" component={Home} />
+        <Route path="/product/:power" component={Product} />
         <Route path="/panier" component={Cart} />
       </Switch>
       <Footer />
