@@ -1,9 +1,23 @@
-import React, { useState } from "react";
+/* eslint-disable react/destructuring-assignment */
+/* eslint-disable react/prop-types */
+import React, { useEffect, useState } from "react";
 import style from "./Home.module.css";
 import Power from "../../commons/Power/Power";
 
-function Home() {
+function Home(props) {
   const [url, setUrl] = useState("");
+  // eslint-disable-next-line prefer-destructuring
+  const categorie = props.match.params.categorie;
+  useEffect(() => {
+    if (categorie) {
+      setUrl(categorie);
+    }
+  }, [categorie]);
+
+  const changeUrl = (path) => {
+    setUrl(path);
+    window.history.replaceState(null, path, `/produits/${path}`);
+  };
 
   return (
     <div className={style.Home}>
@@ -22,35 +36,35 @@ function Home() {
           type="button"
           id="toutes"
           value="Toutes catégories"
-          onClick={() => setUrl("")}
+          onClick={() => changeUrl("")}
         />
         <input
           className={style.button}
           type="button"
           id="classique"
           value=" Les classiques"
-          onClick={(e) => setUrl(e.target.id)}
+          onClick={(e) => changeUrl(e.target.id)}
         />
         <input
           className={style.button}
           type="button"
           id="inutile"
           value="Les inutiles"
-          onClick={(e) => setUrl(e.target.id)}
+          onClick={(e) => changeUrl(e.target.id)}
         />
         <input
           className={style.button}
           type="button"
           id="environnementale"
           value="Les environnementaux"
-          onClick={(e) => setUrl(e.target.id)}
+          onClick={(e) => changeUrl(e.target.id)}
         />
         <input
           className={style.button}
           type="button"
           id="flippant"
           value="Les flippants"
-          onClick={(e) => setUrl(e.target.id)}
+          onClick={(e) => changeUrl(e.target.id)}
         />
 
         <input
@@ -58,7 +72,7 @@ function Home() {
           type="button"
           id="corporel"
           value="Les corporels"
-          onClick={(e) => setUrl(e.target.id)}
+          onClick={(e) => changeUrl(e.target.id)}
         />
       </div>
       <Power url={url} />
